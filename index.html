@@ -1,0 +1,28 @@
+---
+layout: default
+title: Home
+id: home
+---
+
+<div id="home">
+    <h1>About Me</h1>
+
+    <p>
+    This is the homepage of Ryan Wooden, Nova Scotia, Canada, a Software Developer for BlackBerry.
+    </p><p>
+    I play guitar, although not as frequently as I'd like, and I play with computers, probably more frequently than I should.
+    </p><p>
+    I am a Linux user, a Python fan, and a supporter of open source software.
+    </p><p>
+    I strive for simplicity combined with efficiency in all that I do, be it personal or professional.
+    </p><p>
+    If you wish to contact me, see the contact information at the bottom of this page.
+    </p>
+
+    <h1>Blog Posts</h1>
+    <ul class="posts">
+        {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
