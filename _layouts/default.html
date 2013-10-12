@@ -3,11 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Ryan Wooden{% if page.title %} - {{ page.title }}{% endif %}</title>
+        <title>Ryan Wooden</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- font-family: 'Oswald', sans-serif; -->
-        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
         <!-- font-family: 'Cabin Condensed', sans-serif; -->
         <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
@@ -27,33 +24,14 @@
           <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/assets/js/respond.min.js"></script>
         <![endif]-->
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-
     </head>
+
     <body{%if page.id %} data-current-page="{{ page.id }}"{% endif %}>
         <div id="wrap">
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="/index.html">{{ site.name }}</a>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li data-page-id="about"><a class="nav-link" href="/index.html">About Me</a></li>
-                            <li data-page-id="mywork"><a class="nav-link" href="/mywork.html">My Work</a></li>
-                          </li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </div>
+            <div class="site-header">
+                <h1>{{ site.name }}</h1>
             </div>
 
             <div class="site container">
@@ -65,7 +43,6 @@
             <div class="container">
                 <div class="contact">
                     <p>
-                        Ryan Wooden<br />
                         <a href="mailto:rygwdn@gmail.com">rygwdn@gmail.com</a>
                     </p>
                 </div>
