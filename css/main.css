@@ -19,12 +19,6 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
 }
 
 #footer > .container {
@@ -55,5 +49,46 @@ html, body {
 
 .footer {
     font-family: 'Lato', sans-serif;
-    /* font-size: 110%; */
+}
+
+
+
+/*
+ * Set up footer based on screen size.
+ */
+
+.footer {
+    height: 60px;
+}
+#wrap {
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+@media (max-width: 625px) {
+    .footer {
+        height: 90px;
+    }
+    #wrap {
+      margin: 0 auto -90px;
+      padding: 0 0 90px;
+    }
+    .break-contacts {
+        clear: both;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer {
+        height: 140px;
+    }
+    #wrap {
+      margin: 0 auto -140px;
+      padding: 0 0 140px;
+    }
+    .break-contacts, .break-contacts2 {
+        clear: both;
+    }
 }
